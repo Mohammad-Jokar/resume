@@ -16,17 +16,19 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 8px;
 }
 
 header h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #333;
 }
 
 header p {
     font-size: 1.2em;
-    color: #666;
+    margin-top: 5px;
 }
 
 section {
@@ -41,6 +43,8 @@ h2 {
     color: #007acc;
     font-size: 1.8em;
     margin-top: 0;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
 }
 
 ul {
@@ -71,4 +75,23 @@ footer {
 footer a {
     color: #007acc;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
